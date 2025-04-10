@@ -78,7 +78,7 @@ func Register(instance, service, domain string, port int, text []string, ifaces 
 		}
 	}
 
-	if !strings.HasSuffix(trimDot(entry.HostName), entry.Domain) {
+	if !strings.HasSuffix(trimDot(entry.HostName), trimDot(entry.Domain)) {
 		entry.HostName = fmt.Sprintf("%s.%s.", trimDot(entry.HostName), trimDot(entry.Domain))
 	}
 
