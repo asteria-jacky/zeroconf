@@ -1,4 +1,4 @@
-module github.com/libp2p/zeroconf/v2
+module github.com/asteria-jacky/zeroconf/v2
 
 go 1.21
 
